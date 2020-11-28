@@ -1,0 +1,24 @@
+---
+title: "Group 23 CA pollution burden"
+author: "Krista Finlay and Rammy Salem"
+date: "11/28/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+####Read in the cesdemographics data as an an object called ces
+
+```{r}
+ces <- read_csv(here("data", "ces3demographics.csv")) %>% 
+  clean_names()
+```
+
+
+
