@@ -29,4 +29,4 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) + # select x- and 
   theme_minimal()
 ```
 
-
+Based on the graph, it appears that generally, the higher the percentage of White individuals per census tract, the lower the CalEnviroScreen 3.0 score. 
