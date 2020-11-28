@@ -22,7 +22,8 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
 
 ```{r}
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) + # select x- and y-axis variables
-  geom_point() # create scatterplot
+  geom_hex()+ # change to 2d hexbin
+  labs( x = "Percentage of Population- White", y = "California EnviroScreen Score")
 ```
 
 
